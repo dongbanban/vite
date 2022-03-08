@@ -50,12 +50,12 @@ export default defineConfig({
       overlay: false
     }, // 禁止服务器错误遮罩
     port: 8888,
-    proxy: {
-      '/': {
-        target: 'https://www.baidu.com',
-        secure: false,
-        changeOrigin: true
-      }
-    }
+    // proxy: {
+    //   '/': {
+    //     target: '',
+    //     secure: false,
+    //     changeOrigin: true
+    //   }
+    // }
   }
 })
