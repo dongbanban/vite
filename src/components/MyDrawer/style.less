@@ -1,0 +1,21 @@
+
+.my-drawer{
+    &-resize-bar{
+        width: 3px;
+        background: transparent;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .ant-drawer-content{
+        overflow: inherit;
+        &:hover{
+            .my-drawer-resize-bar{
+                opacity: 1;
+            }
+        }
+    }
+}

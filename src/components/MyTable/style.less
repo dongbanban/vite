@@ -1,0 +1,57 @@
+.react-resizable-handle{
+    position: absolute;
+    width: 10px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: col-resize;
+}
+
+.ant-table-thead > tr > th{
+    background: linear-gradient(180deg, #fafafa, #f4f4f4) !important;
+}
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td{
+    padding: 0;
+}
+
+.ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before{
+    display: none;
+}
+
+.My-table{
+    word-break: break-all;
+    &-th{
+        &-action{
+            position: absolute;
+            right: 4px;
+            bottom: 0;
+            cursor: pointer;
+            visibility: hidden;
+        }
+        &-wrapper{
+            position: relative;
+            line-height: normal;
+            &:hover{
+                .My-table-th-action {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    &-default{
+        min-height: 48px;
+        height: 48px;
+        padding: 0 8px !important;
+    }
+    &-comfortable{
+        min-height: 64px;
+        height: 64px;
+        padding: 0 8px !important;
+    }
+    &-compact{
+        min-height: 36px;
+        height: 36px;
+        padding: 0 8px !important;
+    }
+}

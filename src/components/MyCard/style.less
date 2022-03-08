@@ -1,0 +1,41 @@
+.My-card{
+    .ant-card-body{
+        padding: 1px 0 0 0
+    }
+    .ant-tooltip-inner{
+        border-radius: 6px;
+    }
+    box-shadow: 1px 1px 4px rgba(204, 204, 204, 0.5);
+    border-radius: 4px;
+    .ant-table-thead{
+        .ant-table-cell{
+            word-break: normal !important;
+            &:hover{
+                border-right: 1px solid rgba(0, 0, 0, 0.06);
+                background: linear-gradient(180deg, #f4f4f4, #fafafa) !important;
+            }
+        }
+    }
+}
+.My-full-screen{
+    &-card{
+        height: calc(100vh - 48px);
+        .ant-pagination{
+            display: none;
+        }
+    }
+    &-footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 48px;
+        background: #fff;
+        z-index: 10000;
+        padding: 0 24px;
+        box-shadow: 1px -1px 4px rgb(204 204 204 / 50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
