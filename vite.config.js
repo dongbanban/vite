@@ -1,4 +1,8 @@
 /*
+ * @FilePath: /click/Users/derbysofti41/vite/vite.config.js
+ * @author: dongyang(yang.dong@derbysoft.net)
+ */
+/*
  * @file: Describe the file
  * @author: dongyang
  */
@@ -50,12 +54,12 @@ export default defineConfig({
       overlay: false
     }, // 禁止服务器错误遮罩
     port: 8888,
-    // proxy: {
-    //   '/': {
-    //     target: '',
-    //     secure: false,
-    //     changeOrigin: true
-    //   }
-    // }
+    proxy: {
+      // '/': {
+      //   target: '',
+      //   secure: false,
+      //   changeOrigin: true
+      // }
+    }
   }
 })
