@@ -19,7 +19,7 @@ export default function Home2() {
       <div>
         <div>{count}</div>
         <button type="button" onClick={() => dispatch(increment())}>
-          Increment112
+          Increment
         </button>
         <button type="button" onClick={() => dispatch(decrement())}>
           Decrement
