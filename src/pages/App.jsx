@@ -21,8 +21,8 @@ function App() {
       width: 200,
       resizable: true,
       ellipsis: true,
-      // fixed: 'left',
-      render: text => <a>{text}</a>,
+      fixed: 'left',
+      render: text => <div className='abcde'></div>,
     },
     {
       title: 'Age',
@@ -31,6 +31,7 @@ function App() {
       width: 200,
       ellipsis: true,
       resizable: true,
+      render: text => <div className='abcde'></div>,
     },
     {
       title: 'Address',
@@ -209,7 +210,7 @@ function App() {
   };
 
   const content = {
-    tab1: <MyTable name='table1' scroll={{ x: 'max-content' }} columns={columns} dataSource={data} pagination={pagination.tab1} bordered resizable />,
+    tab1: <MyTable name='table1' scroll={{ x: 'max-content' }} columns={columns} dataSource={data} pagination={pagination.tab1} bordered />,
     // tab2: <MyTable name='table2' columns={columns1} dataSource={data} pagination={pagination.tab2} bordered resizable />,
   };
 
